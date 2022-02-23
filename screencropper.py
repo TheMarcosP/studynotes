@@ -191,12 +191,6 @@ class ScreencropperModule(QtWidgets.QWidget, screencropper_ui.Ui_Form):
         self.close()
 
 
-
-
-
-
-
-
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
     draw = ScreencropperModule()

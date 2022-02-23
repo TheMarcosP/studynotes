@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'FlashCardsWindow.ui'
+# Form implementation generated from reading ui file 'FlashCardsWindow_ui.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.6
 #
@@ -11,77 +11,198 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_Form(object):
-    def setupUi(self, Form):
-        Form.setObjectName("Form")
-        Form.resize(400, 300)
-        Form.setStyleSheet("background-color: rgb(54, 54, 54);")
-        self.horizontalLayout = QtWidgets.QHBoxLayout(Form)
+class Ui_MainFrame(object):
+    def setupUi(self, MainFrame):
+        MainFrame.setObjectName("MainFrame")
+        MainFrame.resize(1920, 1080)
+        MainFrame.setStyleSheet("background-color: rgb(32, 31, 30);")
+        self.verticalLayout_3 = QtWidgets.QVBoxLayout(MainFrame)
+        self.verticalLayout_3.setContentsMargins(-1, 0, -1, -1)
+        self.verticalLayout_3.setObjectName("verticalLayout_3")
+        self.frame = QtWidgets.QFrame(MainFrame)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.frame.sizePolicy().hasHeightForWidth())
+        self.frame.setSizePolicy(sizePolicy)
+        self.frame.setStyleSheet("border-color: rgb(255, 255, 255);")
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.frame)
         self.horizontalLayout.setObjectName("horizontalLayout")
-        self.frame_2 = QtWidgets.QFrame(Form)
-        self.frame_2.setMaximumSize(QtCore.QSize(120, 16777215))
+        self.frame_4 = QtWidgets.QFrame(self.frame)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.frame_4.sizePolicy().hasHeightForWidth())
+        self.frame_4.setSizePolicy(sizePolicy)
+        self.frame_4.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_4.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_4.setObjectName("frame_4")
+        self.verticalLayout = QtWidgets.QVBoxLayout(self.frame_4)
+        self.verticalLayout.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout.setSpacing(30)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.frame_2 = QtWidgets.QFrame(self.frame_4)
+        self.frame_2.setMaximumSize(QtCore.QSize(16777215, 50))
         self.frame_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_2.setObjectName("frame_2")
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.frame_2)
+        self.horizontalLayout_2.setContentsMargins(-1, 0, -1, -1)
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
-        self.listView = QtWidgets.QListView(self.frame_2)
-        self.listView.setObjectName("listView")
-        self.horizontalLayout_2.addWidget(self.listView)
-        self.horizontalLayout.addWidget(self.frame_2)
-        self.frame = QtWidgets.QFrame(Form)
-        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame.setObjectName("frame")
-        self.verticalLayout = QtWidgets.QVBoxLayout(self.frame)
-        self.verticalLayout.setObjectName("verticalLayout")
-        self.frame_3 = QtWidgets.QFrame(self.frame)
-        self.frame_3.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_3.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_3.setObjectName("frame_3")
-        self.label_3 = QtWidgets.QLabel(self.frame_3)
-        self.label_3.setGeometry(QtCore.QRect(0, 0, 211, 111))
-        self.label_3.setObjectName("label_3")
-        self.verticalLayout.addWidget(self.frame_3)
-        self.frame_4 = QtWidgets.QFrame(self.frame)
-        self.frame_4.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_4.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_4.setObjectName("frame_4")
-        self.label = QtWidgets.QLabel(self.frame_4)
-        self.label.setGeometry(QtCore.QRect(0, 0, 221, 121))
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Maximum, QtWidgets.QSizePolicy.Maximum)
+        self.managefolderbotton = QtWidgets.QPushButton(self.frame_2)
+        self.managefolderbotton.setMinimumSize(QtCore.QSize(0, 40))
+        self.managefolderbotton.setMaximumSize(QtCore.QSize(140, 40))
+        font = QtGui.QFont()
+        font.setBold(True)
+        font.setWeight(75)
+        self.managefolderbotton.setFont(font)
+        self.managefolderbotton.setStyleSheet("QPushButton{\n"
+"    background-color: rgb(99, 99, 99);\n"
+"    color:rgba(255, 255, 255, 210);\n"
+"    border-radius:14%;\n"
+"}\n"
+"QPushButton:hover{\n"
+"    background-color: rgb(110,110,110);\n"
+"}\n"
+"QPushButton:pressed{\n"
+"    background-color:rgba(80, 80, 80, 80);\n"
+"}\n"
+"QPushButton:disabled{\n"
+"    background-color: rgb(210, 210, 210);\n"
+"    color: rgbrgb(99, 99, 99);\n"
+"}")
+        self.managefolderbotton.setObjectName("managefolderbotton")
+        self.horizontalLayout_2.addWidget(self.managefolderbotton)
+        spacerItem = QtWidgets.QSpacerItem(5, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_2.addItem(spacerItem)
+        self.selectdeck = QtWidgets.QPushButton(self.frame_2)
+        self.selectdeck.setMinimumSize(QtCore.QSize(0, 40))
+        self.selectdeck.setMaximumSize(QtCore.QSize(140, 60))
+        font = QtGui.QFont()
+        font.setBold(True)
+        font.setWeight(75)
+        self.selectdeck.setFont(font)
+        self.selectdeck.setStyleSheet("QPushButton{\n"
+"    background-color: rgb(99, 99, 99);\n"
+"    color:rgba(255, 255, 255, 210);\n"
+"    border-radius:14%;\n"
+"}\n"
+"QPushButton:hover{\n"
+"    background-color: rgb(110,110,110);\n"
+"}\n"
+"QPushButton:pressed{\n"
+"    background-color:rgba(80, 80, 80, 80);\n"
+"}\n"
+"QPushButton:disabled{\n"
+"    background-color: rgb(210, 210, 210);\n"
+"    color: rgbrgb(99, 99, 99);\n"
+"}")
+        self.selectdeck.setObjectName("selectdeck")
+        self.horizontalLayout_2.addWidget(self.selectdeck)
+        spacerItem1 = QtWidgets.QSpacerItem(5, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_2.addItem(spacerItem1)
+        self.capturebotton = QtWidgets.QPushButton(self.frame_2)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.label.sizePolicy().hasHeightForWidth())
-        self.label.setSizePolicy(sizePolicy)
-        self.label.setObjectName("label")
-        self.label_2 = QtWidgets.QLabel(self.frame_4)
-        self.label_2.setGeometry(QtCore.QRect(0, 0, 221, 121))
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Maximum, QtWidgets.QSizePolicy.Maximum)
+        sizePolicy.setHeightForWidth(self.capturebotton.sizePolicy().hasHeightForWidth())
+        self.capturebotton.setSizePolicy(sizePolicy)
+        self.capturebotton.setMinimumSize(QtCore.QSize(0, 40))
+        self.capturebotton.setMaximumSize(QtCore.QSize(140, 40))
+        font = QtGui.QFont()
+        font.setBold(True)
+        font.setWeight(75)
+        self.capturebotton.setFont(font)
+        self.capturebotton.setStyleSheet("QPushButton{\n"
+"    background-color: rgb(99, 99, 99);\n"
+"    color:rgba(255, 255, 255, 210);\n"
+"    border-radius:14%;\n"
+"}\n"
+"QPushButton:hover{\n"
+"    background-color: rgb(110,110,110);\n"
+"}\n"
+"QPushButton:pressed{\n"
+"    background-color:rgba(80, 80, 80, 80);\n"
+"}\n"
+"QPushButton:disabled{\n"
+"    background-color: rgb(210, 210, 210);\n"
+"    color: rgbrgb(99, 99, 99);\n"
+"}\n"
+"")
+        self.capturebotton.setObjectName("capturebotton")
+        self.horizontalLayout_2.addWidget(self.capturebotton)
+        self.frame_5 = QtWidgets.QFrame(self.frame_2)
+        self.frame_5.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_5.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_5.setObjectName("frame_5")
+        self.horizontalLayout_4 = QtWidgets.QHBoxLayout(self.frame_5)
+        self.horizontalLayout_4.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_4.setSpacing(0)
+        self.horizontalLayout_4.setObjectName("horizontalLayout_4")
+        self.horizontalLayout_2.addWidget(self.frame_5)
+        self.verticalLayout.addWidget(self.frame_2)
+        self.pregunta = QtWidgets.QLabel(self.frame_4)
+        self.pregunta.setObjectName("pregunta")
+        self.verticalLayout.addWidget(self.pregunta, 0, QtCore.Qt.AlignHCenter)
+        self.respuesta = QtWidgets.QLabel(self.frame_4)
+        self.respuesta.setObjectName("respuesta")
+        self.verticalLayout.addWidget(self.respuesta, 0, QtCore.Qt.AlignHCenter)
+        self.showanswer_nextquestion = QtWidgets.QPushButton(self.frame_4)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.label_2.sizePolicy().hasHeightForWidth())
-        self.label_2.setSizePolicy(sizePolicy)
-        self.label_2.setObjectName("label_2")
-        self.verticalLayout.addWidget(self.frame_4)
-        self.horizontalLayout.addWidget(self.frame)
+        sizePolicy.setHeightForWidth(self.showanswer_nextquestion.sizePolicy().hasHeightForWidth())
+        self.showanswer_nextquestion.setSizePolicy(sizePolicy)
+        self.showanswer_nextquestion.setMinimumSize(QtCore.QSize(200, 50))
+        font = QtGui.QFont()
+        font.setBold(True)
+        font.setWeight(75)
+        self.showanswer_nextquestion.setFont(font)
+        self.showanswer_nextquestion.setStyleSheet("QPushButton{\n"
+"    background-color: rgb(99, 99, 99);\n"
+"    color:rgba(255, 255, 255, 210);\n"
+"    border-radius:14%;\n"
+"}\n"
+"QPushButton:hover{\n"
+"    background-color: rgb(110,110,110);\n"
+"}\n"
+"QPushButton:pressed{\n"
+"    background-color:rgba(80, 80, 80, 80);\n"
+"}\n"
+"QPushButton:disabled{\n"
+"    background-color: rgb(210, 210, 210);\n"
+"    color: rgbrgb(99, 99, 99);\n"
+"}")
+        self.showanswer_nextquestion.setObjectName("showanswer_nextquestion")
+        self.verticalLayout.addWidget(self.showanswer_nextquestion, 0, QtCore.Qt.AlignHCenter)
+        self.verticalLayout.setStretch(0, 50)
+        self.verticalLayout.setStretch(1, 50)
+        self.verticalLayout.setStretch(2, 50)
+        self.horizontalLayout.addWidget(self.frame_4)
+        self.verticalLayout_3.addWidget(self.frame)
 
-        self.retranslateUi(Form)
-        QtCore.QMetaObject.connectSlotsByName(Form)
+        self.retranslateUi(MainFrame)
+        QtCore.QMetaObject.connectSlotsByName(MainFrame)
 
-    def retranslateUi(self, Form):
+    def retranslateUi(self, MainFrame):
         _translate = QtCore.QCoreApplication.translate
-        Form.setWindowTitle(_translate("Form", "Form"))
-        self.label_3.setText(_translate("Form", "TextLabel"))
-        self.label.setText(_translate("Form", "TextLabel"))
-        self.label_2.setText(_translate("Form", "TextLabel"))
+        MainFrame.setWindowTitle(_translate("MainFrame", "Form"))
+        self.managefolderbotton.setText(_translate("MainFrame", "manage folder"))
+        self.selectdeck.setText(_translate("MainFrame", "select deck"))
+        self.capturebotton.setText(_translate("MainFrame", "Capture"))
+        self.pregunta.setText(_translate("MainFrame", "TextLabel"))
+        self.respuesta.setText(_translate("MainFrame", "TextLabel"))
+        self.showanswer_nextquestion.setText(_translate("MainFrame", "Show Answer"))
 
 
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
-    Form = QtWidgets.QWidget()
-    ui = Ui_Form()
-    ui.setupUi(Form)
-    Form.show()
+    MainFrame = QtWidgets.QWidget()
+    ui = Ui_MainFrame()
+    ui.setupUi(MainFrame)
+    MainFrame.show()
     sys.exit(app.exec_())
